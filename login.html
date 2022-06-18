@@ -123,19 +123,18 @@ form h1:before
 </style>
 
 <script>
-    const senha = document.querySelector('.senha');
+    const login = document.querySelector('.login');
 	const btn = document.querySelector('.btn');
-
 	btn.onclick = () =>
 	{
-		if (senha.type === 'password') 
+		if (login.type === 'password') 
 		{
-			senha.type = 'text'
+			login.type = 'text'
 			btn.src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8SA14-A-zoRaiJ2GdUiESsisaFiHNYrUZtjtjZqnth0D_KdfkwzQWIdCjbzhAoYKPTvs&usqp=CAU'
 		}
 		else
 		{
-			senha.type = 'password'
+			login.type = 'password'
 			btn.src = 'https://icon-library.com/images/icon-eyes/icon-eyes-12.jpg'
 		}
 	}
